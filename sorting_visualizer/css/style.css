@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav {
+    background-color: #2b303d;
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    column-gap: 10%;
+    padding: 0 5%;
+    align-items: center;
+}
+
+nav .header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .header_right .nav-heading {
+    font-size: xx-large;
+    padding: 3% 0;
+}
+
+nav .header_right .algos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-content: center;
+    gap: 10px;
+    padding: 2% 0;
+}
+
+nav .header_right .algos button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 10px;
+    font-size: large;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .header_right .algos button:hover {
+    background-color: #0275d8;
+    cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+    background-color: white;
+    color: #5cb85c;
+}
+
+nav .array-inputs {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    place-content: center;
+    padding: 5% 0;
+}
+
+nav .array-inputs p {
+    margin-bottom: 5px;
+}
+
+nav .array-inputs #a_size,
+nav .array-inputs #a_speed {
+    width: 100%;
+}
+
+nav .array-inputs #a_generate:hover {
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 20px 0;
+}
+
+section #Info_Cont1,
+section #Info_Cont2 {
+    padding: 20%;
+}
+
+section #array_container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.hide {
+    display: none;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-theme nav {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+.light-theme nav .nav-heading {
+    color: #000000;
+}
+
+.light-theme nav .header_right .algos button {
+    color: #000000;
+}
+
+.light-theme nav .header_right .algos button:hover {
+    background-color: #0275d8;
+    color: white;
+}
+
+.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-theme nav {
+    background-color: #2b303d;
+    color: white;
+}
+
+.dark-theme nav .nav-heading {
+    color: #ffffff;
+}
+
+.dark-theme nav .header_right .algos button {
+    color: #000000;
+}
+
+.dark-theme nav .header_right .algos button:hover {
+    background-color: #0275d8;
+    color: rgb(255, 255, 255);
+}
+
+nav .header_right .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 2% 0;
+}
+
+nav .header_right .controls button {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .header_right .controls button:hover {
+    background-color: #0275d8;
+    cursor: pointer;
+}
